@@ -1,0 +1,43 @@
+﻿<Window x:Class="Pra.OefeningKlassenFields.WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pra.OefeningKlassenFields.WPF"
+        mc:Ignorable="d"
+        Title="Oefening klassen en fields" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="btnStart" Content="Start" HorizontalAlignment="Left" Height="59" Margin="32,10,0,0" VerticalAlignment="Top" Width="152" Click="BtnStart_Click"/>
+        <GroupBox Header="Mijn kaart" HorizontalAlignment="Left" Height="184" Margin="213,10,0,0" VerticalAlignment="Top" Width="200">
+            <Grid>
+                <Label Content="Kleur : " HorizontalAlignment="Left" Height="25" Margin="0,10,0,0" VerticalAlignment="Top" Width="57"/>
+                <Label Content="Soort : " HorizontalAlignment="Left" Height="25" Margin="0,40,0,0" VerticalAlignment="Top" Width="57"/>
+                <Label Content="Bonus : " HorizontalAlignment="Left" Height="25" Margin="0,70,0,0" VerticalAlignment="Top" Width="57" RenderTransformOrigin="0.545,1.373"/>
+                <Label Content="Waarde : " HorizontalAlignment="Left" Height="25" Margin="0,100,0,0" VerticalAlignment="Top" Width="57" RenderTransformOrigin="0.545,1.373"/>
+                <Label Content="Score : " HorizontalAlignment="Left" Height="25" Margin="0,130,0,0" VerticalAlignment="Top" Width="57" RenderTransformOrigin="0.545,1.373"/>
+                <Label x:Name="lblMijnKaartKleur" Content="-" HorizontalAlignment="Left" Height="25" Margin="62,10,0,0" VerticalAlignment="Top" Width="116"/>
+                <Label x:Name="lblMijnKaartSoort" Content="-" HorizontalAlignment="Left" Height="25" Margin="62,40,0,0" VerticalAlignment="Top" Width="116"/>
+                <Label x:Name="lblMijnKaartBonus" Content="-" HorizontalAlignment="Left" Height="25" Margin="62,70,0,0" VerticalAlignment="Top" Width="116"/>
+                <Label x:Name="lblMijnKaartWaarde" Content="-" HorizontalAlignment="Left" Height="25" Margin="62,100,0,0" VerticalAlignment="Top" Width="116"/>
+                <Label x:Name="lblMijnKaartScore" Content="-" HorizontalAlignment="Left" Height="25" Margin="62,130,0,0" VerticalAlignment="Top" Width="116"/>
+
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Computerkaart" HorizontalAlignment="Left" Height="184" Margin="413,10,0,0" VerticalAlignment="Top" Width="200">
+            <Grid>
+                <Label Content="Kleur : " HorizontalAlignment="Left" Height="25" Margin="0,10,0,0" VerticalAlignment="Top" Width="57"/>
+                <Label Content="Soort : " HorizontalAlignment="Left" Height="25" Margin="0,40,0,0" VerticalAlignment="Top" Width="57"/>
+                <Label Content="Bonus : " HorizontalAlignment="Left" Height="25" Margin="0,70,0,0" VerticalAlignment="Top" Width="57" RenderTransformOrigin="0.545,1.373"/>
+                <Label Content="Waarde : " HorizontalAlignment="Left" Height="25" Margin="0,100,0,0" VerticalAlignment="Top" Width="57" RenderTransformOrigin="0.545,1.373"/>
+                <Label Content="Score : " HorizontalAlignment="Left" Height="25" Margin="0,130,0,0" VerticalAlignment="Top" Width="57" RenderTransformOrigin="0.545,1.373"/>
+                <Label x:Name="lblComputerKaartKleur" Content="-" HorizontalAlignment="Left" Height="25" Margin="62,10,0,0" VerticalAlignment="Top" Width="116"/>
+                <Label x:Name="lblComputerKaartSoort" Content="-" HorizontalAlignment="Left" Height="25" Margin="62,40,0,0" VerticalAlignment="Top" Width="116"/>
+                <Label x:Name="lblComputerKaartBonus" Content="-" HorizontalAlignment="Left" Height="25" Margin="62,70,0,0" VerticalAlignment="Top" Width="116"/>
+                <Label x:Name="lblComputerKaartWaarde" Content="-" HorizontalAlignment="Left" Height="25" Margin="62,100,0,0" VerticalAlignment="Top" Width="116"/>
+                <Label x:Name="lblComputerKaartScore" Content="-" HorizontalAlignment="Left" Height="25" Margin="62,130,0,0" VerticalAlignment="Top" Width="116"/>
+
+            </Grid>
+        </GroupBox>
+        <Label x:Name="lblResultaat" Content="-" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="36" HorizontalAlignment="Left" Height="56" Margin="213,212,0,0" VerticalAlignment="Top" Width="400"/>
+    </Grid>
+</Window>
